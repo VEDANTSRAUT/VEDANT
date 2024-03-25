@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      body {
+        background-color: rgb(30, 30, 30);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+      }
+      button {
+        position: relative;
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        font-weight: bold;
+        border: 2px solid rgb(153, 255, 0);
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        overflow: hidden;
+        text-transform: uppercase;
+        border-radius: 50px;
+      }
+      span {
+        background: linear-gradient(
+          to right,
+          rgb(42, 139, 171),
+          rgb(232, 165, 40)
+        );
+        height: 0%;
+        width: 0%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        z-index: -1;
+        transition: 0.5s;
+      }
+      button:hover {
+        box-shadow: 10px 10px 100px greenyellow;
+      }
+      button:hover span {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button">Button</button>
+  </body>
+</html>
